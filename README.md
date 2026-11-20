@@ -74,12 +74,14 @@ Evaluated across **26,220 images** under a leak-free Stratified 5-Fold Cross-Val
 └── README.md
 ```
 
+
 ## Datasets
 
 * **Primary Dataset (Dataset A)**: Cassava Leaf Disease Dataset collected by Makerere University AI Lab and NaCRRI in Uganda (26,220 images across 5 classes: CBB, CBSD, CGM, CMD, Healthy).
 * **Cross-Validation Dataset (Dataset B)**: Mendeley Cassava Leaf Disease Dataset collected independently in Tamil Nadu, India (228 images across CBB, CMD, and Healthy).
 
 ---
+
 
 ## Installation & Setup
 
