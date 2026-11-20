@@ -80,7 +80,6 @@ Evaluated across **26,220 images** under a leak-free Stratified 5-Fold Cross-Val
 * **Cross-Validation Dataset (Dataset B)**: Mendeley Cassava Leaf Disease Dataset collected independently in Tamil Nadu, India (228 images across CBB, CMD, and Healthy).
 
 ---
----
 
 ## Installation & Setup
 
