@@ -106,7 +106,7 @@ python run_experiment.py \
   --model pretrained \
   --attention_mode spatial_se \
   --fold 0 \
-  --epochs 5 \
+  --epochs 6 \
   --batch_size 16 \
   --lr 3e-4 \
   --loss ce \
