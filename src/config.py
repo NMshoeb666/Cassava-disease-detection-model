@@ -1,4 +1,5 @@
 import os
+import platform
 import torch
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -37,7 +38,8 @@ CROSS_CLASSES_SUBSET = [0, 3, 4]  # cbb, cmd, healthy
 
 IMG_SIZE = 224          # 224x224 for fast training (can be overridden via CLI)
 BATCH_SIZE = 16         # 16 or 32 with AMP and FlashAttention for high GPU utilization
-NUM_WORKERS = 2         # Multiprocessing loader to eliminate disk I/O bottleneck
+# On Windows, PyTorch DataLoader requires 0 workers to avoid multiprocessing spawn hangs
+NUM_WORKERS = 0 if platform.system() == 'Windows' else 2
 NUM_EPOCHS = 15
 LEARNING_RATE = 3e-4
 WEIGHT_DECAY = 1e-4
